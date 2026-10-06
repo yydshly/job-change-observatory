@@ -1,7 +1,7 @@
 {
   "package.json": "64db51a57854da4a57379629594231b81098d72db6058108ed71b22a92596c46",
   ".gitignore": "2ee167c570f7f3aba2387b29dd0c94f321bf397ac4e1a48ddf778dbc17f37b8d",
-  "README.md": "cbee125d604aedf0eed5075bbfdc3d89c532aa3e3dff1656f1dd203ae78d88d3",
+  "README.md": "f0a7f3884a9da897bcfc9b194de3c586403bb42365480b153813e7efbc93cf15",
   "tests/dom.mjs": "0cc7140725ca9e13406e16c21c5beefd45092ad48e3db11c6af25561029de170",
   "tests/browser.mjs": "fdfd30a1bc1b2b539cb0d91066930544032748e567865325f66b6e7c68d6400b",
   "tests/test_core.py": "5ff2b099b7cc1492b2032c333a6b1f60b6fe6a60b8bc3c5b2d21b5640a4b8fac",
