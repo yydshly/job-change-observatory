@@ -1,0 +1,70 @@
+{
+  "verifiedAt": "2026-10-06T18:02:33.059Z",
+  "method": "JSDOM with fetch and dialog polyfills; verifies application logic only, not browser layout/accessibility",
+  "checks": [
+    {
+      "name": "real count and baseline",
+      "passed": true
+    },
+    {
+      "name": "first ten rendered",
+      "passed": true
+    },
+    {
+      "name": "skill selection evidence count",
+      "passed": true
+    },
+    {
+      "name": "details contain matched Python token",
+      "passed": true
+    },
+    {
+      "name": "detail close action",
+      "passed": true
+    },
+    {
+      "name": "saved-only filter",
+      "passed": true
+    },
+    {
+      "name": "local persistence written",
+      "passed": true
+    },
+    {
+      "name": "empty search state",
+      "passed": true
+    },
+    {
+      "name": "reset restores total",
+      "passed": true
+    },
+    {
+      "name": "next page",
+      "passed": true
+    },
+    {
+      "name": "previous page",
+      "passed": true
+    },
+    {
+      "name": "source-category subset",
+      "passed": true
+    },
+    {
+      "name": "method navigation",
+      "passed": true
+    },
+    {
+      "name": "coverage disclosure",
+      "passed": true
+    },
+    {
+      "name": "all rendered source links canonical",
+      "passed": true
+    },
+    {
+      "name": "no raw listing html rendered",
+      "passed": true
+    }
+  ]
+}

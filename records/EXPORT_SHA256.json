@@ -1,0 +1,22 @@
+{
+  "package.json": "64db51a57854da4a57379629594231b81098d72db6058108ed71b22a92596c46",
+  ".gitignore": "2ee167c570f7f3aba2387b29dd0c94f321bf397ac4e1a48ddf778dbc17f37b8d",
+  "README.md": "cbee125d604aedf0eed5075bbfdc3d89c532aa3e3dff1656f1dd203ae78d88d3",
+  "tests/dom.mjs": "0cc7140725ca9e13406e16c21c5beefd45092ad48e3db11c6af25561029de170",
+  "tests/browser.mjs": "fdfd30a1bc1b2b539cb0d91066930544032748e567865325f66b6e7c68d6400b",
+  "tests/test_core.py": "5ff2b099b7cc1492b2032c333a6b1f60b6fe6a60b8bc3c5b2d21b5640a4b8fac",
+  "records/VERIFICATION.md": "2f97591bbf0521961e9c5f58307ba4402ab7168614ee6c52f1acbffe5eee425e",
+  "records/DECISIONS.md": "bf7a5925aa6c000c1cc51d7ba89b7b3b20e949f7908b9fac94debec15376a8ab",
+  "records/dom-verification.json": "65420dc89156a604b16e5345f815edcf34787a5faa6116999ba3e962ad804b80",
+  "records/SOURCES.md": "d90c78f76c6c2cc1d056209ccb06aae3feceb89a116f7ac3d8a91e179c464a77",
+  "records/CHANGELOG.md": "58d1d845e1eef5993b87f694d1a2aa1a2f2d3530ee3487adb7d010126ec9ec90",
+  "scripts/build.py": "fc060f36ba075cf61b3e7d7d85d14deb1a5f887a458a2bb3564bbd526eb9f56f",
+  "scripts/collect.py": "554194131b131c79ef3f680d749cd41132e1fc8251cfffe4dcd7cbd15a81f83e",
+  "scripts/core.py": "1a8bb5c41b3e1194fba36bf5216054ec2129e5ae4b0661712437c5a6edb50cf6",
+  "dist/data.json": "e45ebf6f5163951c099db0b8cebaeb5db2b96c2dd1b33b41529d33c1d7434177",
+  "dist/app.js": "ed359d5cb5d0f4f8a0f138816e3723687a2fa3ef79448a4c45f1077d9de20ec4",
+  "dist/style.css": "b921bd0d9f4cdc9392d2891668113c7c482853be66a362b383e51f0758ba2c97",
+  "dist/index.html": "eefd16be455b677f0081a831113787797883c207ee08e78c388a40066d890ad6",
+  "dist/favicon.svg": "5c3f31f6c25f1815acfbce97af9d5098a214bec0ac2441e4f178fee86259ff2c",
+  "snapshots/20261006T175643Z.json": "98aff722a0f11a7ffb05a0fb0282f3f47171d1b8616b526a4f90a6d3da223bc5"
+}

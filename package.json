@@ -1,0 +1,1 @@
+{"name":"job-change-observatory","version":"0.1.0","private":true,"type":"module","scripts":{"test":"python -m unittest discover -s tests -v && node --check dist/app.js","collect":"python scripts/collect.py","build":"python scripts/build.py"}}
