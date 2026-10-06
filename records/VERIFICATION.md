@@ -19,8 +19,18 @@
 ## Not claimed
 - Complete seven-day Jobicy coverage, other job boards, China market or global representativeness
 - Historical trends, active/closed job state, validated required-versus-optional skills, proficiency, candidate fit, optimal career direction
-- Automatic periodic operation: collection is manual and the page is a published snapshot
+- At V0.1, collection was manual. This is superseded by V0.2 durable daily synchronization and the confirmed schedule described below.
 - GitHub CI/remote submission until independent push verification
 
 ## Reproduce
 Run `npm test`. Optional DOM verification requires `jsdom` available to Node and runs via `node tests/dom.mjs`. Optional browser verification requires Playwright and a browser-enabled environment, the local HTTP server on 8769, and `node tests/browser.mjs`. UI regression scripts intentionally assert the delivered baseline fixture (100 jobs); adjust expected evidence counts when testing a later snapshot, without altering data to satisfy tests.
+
+## V0.2 additions
+
+15 Worker/R2 in-memory contract checks passed (`worker-verification.json`). Core 8 and DOM 16 checks re-passed. Production writer verification and platform schedule setup are reported separately; in-memory checks alone do not prove deployed persistence. Real-browser visual checks remain blocked as above.
+
+### Hosted V0.2 writer/readback verified
+Existing platform-managed service access successfully seeded the original real baseline into R2 and read the same 100 jobs/time/hash back. Repeated bootstrap returned already_seeded. Daily sync returned not_due, preserving the one genuine observation. See hosted-verification.json. The upstream no-key API GET was verified during collection; a new Worker-origin collection has not been forced before its rate-limited due time. The first scheduled collection remains a separate observable outcome.
+
+### Schedule setup confirmation
+Coordinator confirmed enabled flexible daily automation at 08:00 Asia/Shanghai from 2026-10-08. Live schedule metadata was written and read back through the same Site. First scheduled execution is still pending; enabled is not proof that a daily upstream collection has run.

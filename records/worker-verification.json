@@ -1,0 +1,66 @@
+{
+  "verifiedAt": "2026-10-06T18:19:45.855Z",
+  "method": "In-memory R2 contract tests; synthetic fixtures confined to tests, never stored in production",
+  "checks": [
+    {
+      "name": "baseline durable readback",
+      "passed": true
+    },
+    {
+      "name": "bootstrap idempotent",
+      "passed": true
+    },
+    {
+      "name": "same-day sync skips source",
+      "passed": true
+    },
+    {
+      "name": "extractor boundaries",
+      "passed": true
+    },
+    {
+      "name": "cross-version comparison refused",
+      "passed": true
+    },
+    {
+      "name": "missing classified as notInLatestSample",
+      "passed": true
+    },
+    {
+      "name": "failure returns 502",
+      "passed": true
+    },
+    {
+      "name": "failure preserves snapshot",
+      "passed": true
+    },
+    {
+      "name": "hourly claim prevents duplicate source call",
+      "passed": true
+    },
+    {
+      "name": "successful snapshot append",
+      "passed": true
+    },
+    {
+      "name": "deduplicate and retain history",
+      "passed": true
+    },
+    {
+      "name": "new snapshot uses explicit scope",
+      "passed": true
+    },
+    {
+      "name": "cross-origin writes rejected",
+      "passed": true
+    },
+    {
+      "name": "missing binding explicit 503",
+      "passed": true
+    },
+    {
+      "name": "data route returns durable data",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "verifiedAt": "2026-10-06T18:16:19Z",
+  "site": "https://job-change-observatory.yydshly.chatgpt.site",
+  "siteSourceCommit": "09d9a29d8fb05c47700cf0645e46470e013b443c",
+  "deploymentStatus": "succeeded",
+  "checks": [
+    {
+      "route": "POST /api/bootstrap",
+      "httpStatus": 200,
+      "result": "seeded",
+      "count": 100
+    },
+    {
+      "route": "GET /api/data",
+      "httpStatus": 200,
+      "storage": "r2",
+      "historyCount": 1,
+      "observedAt": "2026-10-06T17:56:43+00:00",
+      "responseSha256": "69b3bae4e15347d2f3b8815fb83fd57bfde847a123d2caebfdcc9526b81fcd3c"
+    },
+    {
+      "route": "POST /api/bootstrap repeated",
+      "httpStatus": 200,
+      "result": "already_seeded"
+    },
+    {
+      "route": "POST /api/sync",
+      "httpStatus": 200,
+      "result": "not_due",
+      "nextEligibleAt": "2026-10-07T13:56:43.000Z"
+    }
+  ],
+  "scope": "Existing owner-private platform service access; no new credential; initial real baseline reused",
+  "limits": "This verification does not claim a future scheduled run has executed. Live upstream GET was verified during baseline collection; Worker network collection will first run when due.",
+  "schedule": {
+    "enabled": true,
+    "timezone": "Asia/Shanghai",
+    "localTime": "08:00",
+    "timing": "flexible daily",
+    "startsOn": "2026-10-08",
+    "firstExecution": "pending",
+    "verifiedBy": "Coordinator platform creation plus Site status readback"
+  }
+}

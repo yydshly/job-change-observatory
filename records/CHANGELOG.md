@@ -18,3 +18,16 @@ Validation:
 - See VERIFICATION.md for final check status
 
 GitHub: submission is a separate release handoff; actual remote commit receipt will be reported after verified push. Do not interpret this file as proof of a GitHub push.
+
+## V0.2 — 2026-10-06
+Purpose: meet the requested continuous-information outcome, instead of stopping at a one-off static report.
+
+- Same private Site upgraded to a dependency-free Worker with platform R2; daily data updates do not require rebuilding or republishing
+- Append-only normalized snapshots, original baseline import, hourly failure logs and durable synchronization status
+- Daily idempotence and a minimum 20-hour interval after success; failed attempts cannot retry for one hour
+- Source population fixed to first 100 unfiltered Jobicy jobs; no concurrent/all-page collection
+- UI reads latest durable data, shows freshness (>36 hours stale), last attempt/success, failures, schedule state and comparable snapshot differences
+- Explicit extractor-version gate: v1 baseline and v2 Worker extraction are not treated as comparable trends
+- Supported service access uses existing platform owner-private access only; no app secrets, new credentials, paid API or expanded sharing
+- 15 in-memory Worker/R2 contract tests added, including append, readback, dedupe, no-overwrite, failure preservation, rate limiting and cross-origin rejection
+- Coordinator confirmed enabled flexible daily schedule at 08:00 Asia/Shanghai from 2026-10-08; first execution remains pending. Page schedule metadata is updated only after that confirmation
