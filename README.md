@@ -1,6 +1,6 @@
 # 岗位变化观察站
 
-私有网页：[岗位变化观察站](https://job-change-observatory.yydshly.chatgpt.site)。网站与源码仓库均仅按当前私有权限开放。网页发布源版本：`a82fd373995e4de98ba282934efc1f2a4e87eb8b`。GitHub源码与独立网页分开部署；网页每日更新由已配置的私有平台调度驱动，并非GitHub定时任务。
+私有网页：[岗位变化观察站](https://job-change-observatory.yydshly.chatgpt.site)。源码仓库已按作者授权公开；运行网站仍需项目所有者登录。网页发布源版本：`a82fd373995e4de98ba282934efc1f2a4e87eb8b`。GitHub源码与独立网页分开部署；网页每日更新由已配置的私有平台调度驱动，并非GitHub定时任务。
 
 A bounded, source-linked personal learning research product. V0.3 closes the loop from a real public API response to immutable snapshots, deterministic skill mentions, and a Chinese evidence explorer.
 
