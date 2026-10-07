@@ -20,3 +20,15 @@ Help the owner understand evidence in public job postings and choose a learning 
 
 ## Stop / continue criteria
 Continue if source-backed exploration helps make one concrete learning decision and manual audit finds an acceptable precision level. Fix coverage/extraction before expanding if irrelevant roles or false matches dominate. Add a separately named technical sample on the next permitted synchronization, preserving query/filter metadata and separate denominators. Do not merge different collection universes into a spurious trend.
+
+## 2026-10-07 / V0.3 — Bounded cohort design
+
+Problem: the newest 100 unfiltered Jobicy postings are heavily affected by source ordering and industry mix; only 6 carry Software Engineering. The whole-sample Python ratio 18/100 conflates very different roles.
+
+Decision: default to a precisely defined technical-function subset, with optional software-only and whole-source views. Technical categories are exactly Software Engineering, DevOps & Infrastructure, Cybersecurity, and Data Science & Analytics. Match source category labels, not keyword mentions or an inferred claim that a role is technical. Source labels themselves may be imperfect; read the original duties.
+
+Measured baseline: technical=17 roles / 11 employers / Python mentions12; software-only=6 roles; all-source=100 roles / 53 employers / Python18. Keep the underlying single snapshot intact. This improves denominator/evidence consistency, not external market coverage. Every chart, selected-skill result and learning experiment uses the selected cohort. Empty cohorts generate no borrowed statistics.
+
+Additional-source decision: no new employer feed included this release. A populated Wealthfront Lever endpoint conflicts with broad scraping/copying restrictions linked from its careers site; Plaid and DuckDuckGo Lever endpoints return404; Mistral's Lever endpoint returns an empty array and its careers site uses Ashby. Official ATS docs establish technical access but do not settle all employer-specific research/display rights. Prefer a smaller clearly bounded dataset over silently including uncertain sources. No paid APIs, credentials, outreach, schedule changes or Jobicy refresh were introduced.
+
+Next coverage gate: verify an explicitly permitted technical employer feed or coordinate a separately named Jobicy technical collection sequence. Record its selection rule, retrieval time, licence/access evidence, original URLs and denominator before inclusion. Do not merge that future sequence into the existing unfiltered history or call sample differences market trends.

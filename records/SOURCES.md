@@ -14,3 +14,15 @@
 - API docs permit product/research interfaces and caching, with no more than one new automated synchronization pass hourly. Listing content is not covered by the examples' MIT license
 - No full descriptions included in the normalized snapshot; hashes allow detecting change but cannot reconstruct original text
 - Source availability/terms may change. Recheck before materially expanding coverage or redistributing data
+
+## Additional source feasibility — 2026-10-07, no ingestion
+
+- Lever official public Postings API: https://github.com/lever/postings-api
+- Lever partner/job-board feed help: https://help.lever.co/s/article/Generating-and-using-API-credentials
+- Wealthfront filtered Lever GET: HTTP200, 7 engineering results, but excluded because linked terms restrict scraping/copying: https://www.wealthfront.com/legal/terms
+- Plaid Lever GET: HTTP404; current official careers: https://plaid.com/careers/
+- DuckDuckGo Lever GET: HTTP404; current official careers: https://duckduckgo.com/hiring
+- Mistral Lever GET: HTTP200 empty array; current careers links to Ashby: https://mistral.ai/careers/
+- Ashby technical documentation: https://developers.ashbyhq.com/docs/public-job-posting-api ; employer-careers-site use is documented, broader research/republication permission was not confirmed
+
+No returned employer postings were added to the product. ATS accessibility is not treated as an unconditional redistribution licence. Existing Jobicy baseline/source population and daily schedule remain unchanged.

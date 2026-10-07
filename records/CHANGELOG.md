@@ -31,3 +31,14 @@ Purpose: meet the requested continuous-information outcome, instead of stopping 
 - Supported service access uses existing platform owner-private access only; no app secrets, new credentials, paid API or expanded sharing
 - 15 in-memory Worker/R2 contract tests added, including append, readback, dedupe, no-overwrite, failure preservation, rate limiting and cross-origin rejection
 - Coordinator confirmed enabled flexible daily schedule at 08:00 Asia/Shanghai from 2026-10-08; first execution remains pending. Page schedule metadata is updated only after that confirmation
+
+## V0.3 — 2026-10-07
+Purpose: reduce misleading cross-industry skill inference before expanding source volume.
+
+- Defined technical17, software6 and full100 baseline cohorts using explicit source categories
+- Unified cohort denominators across overview, skill counts, employer counts, learning suggestion and evidence explorer; default technical cohort12/17 Python evidence is separate from all-source18/100
+- Cohort switch resets incompatible filters; ordinary filter reset preserves the selected cohort
+- Added explicit17/100 coverage text and category rules, plus empty-cohort safeguards
+- Investigated bounded additional employer feeds; none met both current-data and sufficiently clear use-rights requirements, so no extra source was ingested
+- Added cohort regression checks; kept all true snapshots, R2 daily collector, schedule and sharing unchanged
+- Real-browser visual testing is still unverified; DOM tests are not presented as visual acceptance

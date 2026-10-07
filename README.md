@@ -1,8 +1,8 @@
 # 岗位变化观察站
 
-私有网页：[岗位变化观察站](https://job-change-observatory.yydshly.chatgpt.site)。网站与源码仓库均仅按当前私有权限开放。网页发布源版本：`20b5e815e62250ed63a478efe5f2fcf1657b23f0`。GitHub源码与独立网页分开部署；网页每日更新由已配置的私有平台调度驱动，并非GitHub定时任务。
+私有网页：[岗位变化观察站](https://job-change-observatory.yydshly.chatgpt.site)。网站与源码仓库均仅按当前私有权限开放。网页发布源版本：`a82fd373995e4de98ba282934efc1f2a4e87eb8b`。GitHub源码与独立网页分开部署；网页每日更新由已配置的私有平台调度驱动，并非GitHub定时任务。
 
-A bounded, source-linked personal learning research product. V0.2 closes the loop from a real public API response to immutable snapshots, deterministic skill mentions, and a Chinese evidence explorer.
+A bounded, source-linked personal learning research product. V0.3 closes the loop from a real public API response to immutable snapshots, deterministic skill mentions, and a Chinese evidence explorer.
 
 ## Run
 
@@ -63,3 +63,7 @@ Test whether the tool improves one learning choice: fix a target role/eligible g
 ## Live hosted routes
 
 GET `/api/data` returns latest durable snapshot/history/status. GET `/api/status` returns operations metadata. POST `/api/bootstrap` idempotently imports the genuine baseline. POST `/api/sync` performs a rate-limited daily collection. These shared update endpoints rely on the confirmed owner-private platform access boundary; do not make the Site public without adding independent write authorization. No service credential is committed.
+
+## Defined observation cohorts (V0.3)
+
+The UI defaults to technical functions: exact source categories Software Engineering, DevOps & Infrastructure, Cybersecurity, Data Science & Analytics. Software-only and all-source views are available. The delivered baseline has17 technical jobs/11 employers,6 software jobs and100 source jobs. Technical Python mentions are12/17, distinct from18/100 overall. This fixes denominator consistency; it does not expand source coverage or create representative market statistics. Additional employer feeds were researched but excluded when access/terms were uncertain or endpoints empty/unavailable.

@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-06T18:18:11.399Z",
+  "verifiedAt": "2026-10-07T02:26:49.339Z",
   "method": "JSDOM with fetch and dialog polyfills; verifies application logic only, not browser layout/accessibility",
   "checks": [
     {
@@ -64,6 +64,42 @@
     },
     {
       "name": "no raw listing html rendered",
+      "passed": true
+    },
+    {
+      "name": "software cohort count and denominator",
+      "passed": true
+    },
+    {
+      "name": "cohort switch clears category filter",
+      "passed": true
+    },
+    {
+      "name": "all-source cohort is still available",
+      "passed": true
+    },
+    {
+      "name": "all-source Python denominator is independent",
+      "passed": true
+    },
+    {
+      "name": "jobs cohort updates overview consistently",
+      "passed": true
+    },
+    {
+      "name": "technical learning evidence is 12 of17",
+      "passed": true
+    },
+    {
+      "name": "explicit original-source denominator",
+      "passed": true
+    },
+    {
+      "name": "empty technical cohort has zero denominator",
+      "passed": true
+    },
+    {
+      "name": "empty cohort never borrows skill counts",
       "passed": true
     }
   ]
