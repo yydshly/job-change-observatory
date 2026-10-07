@@ -1,0 +1,58 @@
+{
+  "verifiedAt": "2026-10-07T15:13:49.811Z",
+  "method": "JSDOM synthetic fixtures only; not browser visual QA",
+  "checks": [
+    {
+      "name": "two real-choice entries enable compare",
+      "passed": true
+    },
+    {
+      "name": "request is read-only compare route",
+      "passed": true
+    },
+    {
+      "name": "busy state disables repeat clicks",
+      "passed": true
+    },
+    {
+      "name": "changing selection cancels busy state",
+      "passed": true
+    },
+    {
+      "name": "stale response cannot overwrite selection",
+      "passed": true
+    },
+    {
+      "name": "fixed-role comparison visible",
+      "passed": true
+    },
+    {
+      "name": "original source link preserved",
+      "passed": true
+    },
+    {
+      "name": "unsafe text is escaped",
+      "passed": true
+    },
+    {
+      "name": "full comparison download link available",
+      "passed": true
+    },
+    {
+      "name": "invalid order never sends request",
+      "passed": true
+    },
+    {
+      "name": "incompatible versions show blocker without counts",
+      "passed": true
+    },
+    {
+      "name": "failed reads explain preserved snapshots",
+      "passed": true
+    },
+    {
+      "name": "failed read leaves retry available",
+      "passed": true
+    }
+  ]
+}

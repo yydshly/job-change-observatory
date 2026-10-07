@@ -7,6 +7,7 @@ w.fetch=async()=>({ok:true,json:async()=>data});w.scrollTo=()=>{};w.HTMLElement.
 const q=s=>w.document.querySelector(s);const check=(name,value)=>{checks.push({name,passed:!!value});if(!value)throw new Error(name)};const checks=[];
 await w.eval(`(async()=>{${js}\n})()`);
 check('real count and baseline',q('#stat-jobs').textContent==='17'&&q('#stat-history').textContent==='1');
+check('one baseline disables comparison',q('#compare-history').disabled);check('history baseline explanation',q('#history-comparison').textContent.includes('只有一份真实基线'));
 check('first ten rendered',w.document.querySelectorAll('.job').length===10);
 q('[data-learning]').click();check('skill selection evidence count',q('#results-count').textContent==='12 条匹配 / 17 条技术职能组');
 q('.job-title').click();check('details contain matched Python token',q('#detail').open&&q('#detail-content').textContent.includes('python'));q('.close').click();check('detail close action',!q('#detail').open);

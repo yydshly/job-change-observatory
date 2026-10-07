@@ -32,3 +32,13 @@ Measured baseline: technical=17 roles / 11 employers / Python mentions12; softwa
 Additional-source decision: no new employer feed included this release. A populated Wealthfront Lever endpoint conflicts with broad scraping/copying restrictions linked from its careers site; Plaid and DuckDuckGo Lever endpoints return404; Mistral's Lever endpoint returns an empty array and its careers site uses Ashby. Official ATS docs establish technical access but do not settle all employer-specific research/display rights. Prefer a smaller clearly bounded dataset over silently including uncertain sources. No paid APIs, credentials, outreach, schedule changes or Jobicy refresh were introduced.
 
 Next coverage gate: verify an explicitly permitted technical employer feed or coordinate a separately named Jobicy technical collection sequence. Record its selection rule, retrieval time, licence/access evidence, original URLs and denominator before inclusion. Do not merge that future sequence into the existing unfiltered history or call sample differences market trends.
+
+## 2026-10-07 / V0.4 — Distinguish sample turnover from within-role change
+
+A changing first-page feed can make skill totals move even when no retained posting changed. The history explorer therefore shows two views: counts in each complete chosen cohort (denominators can differ), and counts for IDs present inside that cohort at both times (one fixed denominator). New postings, unavailable-in-latest postings and category movement are listed separately.
+
+Neither view is a hiring-demand trend or proof of job closure. A category-exiting role may still be in the source sample. A missing role may have moved down the latest-page ordering or out of the source's time window. The product preserves source URLs and necessary field/skill differences; it cannot reproduce historical full descriptions because those were intentionally not stored.
+
+Comparison is read-only. Before/after selections are resolved against stored snapshot metadata, never used directly as object paths. Missing scope/extractor metadata is a blocker rather than assumed compatibility. Equal or reversed observation dates are rejected. First v1 baseline versus v2 Worker collection will remain incomparable; later same-version snapshots become comparable.
+
+A single actual baseline remains a single baseline. Demonstrations and edge cases are unit/DOM fixtures only, never inserted into R2 or the production interface. The daily source collection schedule is not modified to create data for this feature.

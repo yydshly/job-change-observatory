@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-10-07T15:18:17.861Z",
+  "method": "Synthetic unit fixtures held only in test memory; no production writes",
+  "checks": [
+    {
+      "name": "valid same-scope ordered pair",
+      "passed": true
+    },
+    {
+      "name": "group denominators retained",
+      "passed": true
+    },
+    {
+      "name": "fixed-cohort intersection excludes composition changes",
+      "passed": true
+    },
+    {
+      "name": "new source sample isolated",
+      "passed": true
+    },
+    {
+      "name": "missing record not labeled closed",
+      "passed": true
+    },
+    {
+      "name": "category entry distinct from first seen",
+      "passed": true
+    },
+    {
+      "name": "category exit distinct from missing",
+      "passed": true
+    },
+    {
+      "name": "changed same-role skill details",
+      "passed": true
+    },
+    {
+      "name": "stable SQL count reflects mention change",
+      "passed": true
+    },
+    {
+      "name": "all-sample SQL count separately reflects composition",
+      "passed": true
+    },
+    {
+      "name": "different extractor blocked",
+      "passed": true
+    },
+    {
+      "name": "different source blocked",
+      "passed": true
+    },
+    {
+      "name": "missing metadata blocked",
+      "passed": true
+    },
+    {
+      "name": "reverse order blocked",
+      "passed": true
+    },
+    {
+      "name": "same snapshot blocked",
+      "passed": true
+    },
+    {
+      "name": "unknown cohort blocked",
+      "passed": true
+    },
+    {
+      "name": "zero denominator produces no invented counts",
+      "passed": true
+    },
+    {
+      "name": "read-only comparison endpoint works",
+      "passed": true
+    },
+    {
+      "name": "unknown snapshot cannot read arbitrary object",
+      "passed": true
+    },
+    {
+      "name": "single baseline returns truthful insufficient state",
+      "passed": true
+    }
+  ]
+}

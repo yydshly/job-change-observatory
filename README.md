@@ -2,7 +2,7 @@
 
 私有网页：[岗位变化观察站](https://job-change-observatory.yydshly.chatgpt.site)。源码仓库已按作者授权公开；运行网站仍需项目所有者登录。网页发布源版本：`a82fd373995e4de98ba282934efc1f2a4e87eb8b`。GitHub源码与独立网页分开部署；网页每日更新由已配置的私有平台调度驱动，并非GitHub定时任务。
 
-A bounded, source-linked personal learning research product. V0.3 closes the loop from a real public API response to immutable snapshots, deterministic skill mentions, and a Chinese evidence explorer.
+A bounded, source-linked personal learning research product. V0.4 closes the loop from a real public API response to immutable snapshots, deterministic skill mentions, and a Chinese evidence explorer.
 
 ## Run
 
@@ -67,3 +67,9 @@ GET `/api/data` returns latest durable snapshot/history/status. GET `/api/status
 ## Defined observation cohorts (V0.3)
 
 The UI defaults to technical functions: exact source categories Software Engineering, DevOps & Infrastructure, Cybersecurity, Data Science & Analytics. Software-only and all-source views are available. The delivered baseline has17 technical jobs/11 employers,6 software jobs and100 source jobs. Technical Python mentions are12/17, distinct from18/100 overall. This fixes denominator consistency; it does not expand source coverage or create representative market statistics. Additional employer feeds were researched but excluded when access/terms were uncertain or endpoints empty/unavailable.
+
+## Historical evidence explorer (V0.4)
+
+In Methods & Records, choose two saved snapshots and an observation group. The read-only `/api/compare?before=...&after=...&cohort=technical` endpoint returns auditable role changes, sample-turnover versus fixed-shared-role skill counts, and comparability gates. With one actual snapshot the UI remains disabled; a different extractor version is not silently compared. No fake history is seeded.
+
+Additional checks: `node tests/history.mjs`; with jsdom installed, `node tests/history-dom.mjs`. Fixtures are confined to test memory. Daily collection and source population are unchanged.

@@ -42,3 +42,15 @@ Purpose: reduce misleading cross-industry skill inference before expanding sourc
 - Investigated bounded additional employer feeds; none met both current-data and sufficiently clear use-rights requirements, so no extra source was ingested
 - Added cohort regression checks; kept all true snapshots, R2 daily collector, schedule and sharing unchanged
 - Real-browser visual testing is still unverified; DOM tests are not presented as visual acceptance
+
+## V0.4 — 2026-10-07
+Purpose: make saved history reviewable without waiting idle for the next collection or fabricating a second observation.
+
+- Added read-only `/api/compare` with explicit before/after snapshot and observation-cohort selection
+- Separated new-to-source, missing-from-latest, category entry/exit, and same-role content changes
+- Added per-sample skill counts alongside fixed-shared-role counts so composition changes are not mistaken for changes inside the same postings
+- Added exact role links, added/removed skill mentions, changed metadata fields, body-hash changes and complete comparison JSON download
+- Blocked comparisons with missing/different scope or extractor metadata, reversed/equal dates, or unknown snapshots; object reads use the saved history allowlist
+- Single-baseline state stays disabled and honest; tests use in-memory fixtures only
+- Protected interface from stale async responses and repeated clicks; failures preserve existing snapshots
+- Daily schedule, source population, collection gate and production snapshot content remain unchanged

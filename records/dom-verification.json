@@ -1,9 +1,17 @@
 {
-  "verifiedAt": "2026-10-07T02:26:49.339Z",
+  "verifiedAt": "2026-10-07T15:13:48.829Z",
   "method": "JSDOM with fetch and dialog polyfills; verifies application logic only, not browser layout/accessibility",
   "checks": [
     {
       "name": "real count and baseline",
+      "passed": true
+    },
+    {
+      "name": "one baseline disables comparison",
+      "passed": true
+    },
+    {
+      "name": "history baseline explanation",
       "passed": true
     },
     {
